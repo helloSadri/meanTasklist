@@ -11,6 +11,6 @@ Run 'npm run build:watch'
 
 !!! in another terminal !!!
 go to /-> meanTasklist
- Run node server 
+ Run 'node server' 
  
  
