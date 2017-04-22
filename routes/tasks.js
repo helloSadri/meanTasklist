@@ -31,12 +31,12 @@ router.get('/task/:id', function (req, res, next){
 //Save Task
 router.post('/task', function(req, res, next){
     var task = req.body;
-    if(!task.title || (task.isDone +'')){
+    if(!task.todo || !(task.isDone +'')){
         res.status(400);
         res.json({
             "error": "Bad Data"
         });
-        db.tasks.save(task, function(err, task){
+        db.mean2tasklist.save(task, function(err, task){
             if(err){
                 res.send(err);
             }
@@ -65,8 +65,8 @@ router.put('/task/:id', function (req, res, next){
         updTask.isDone = task.isDone;
     }
 
-    if (task.title){
-        updTask.title = task.title;
+    if (task.todo){
+        updTask.todo = task.todo;
     }
     
     if (!ipdTask){
