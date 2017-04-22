@@ -7,7 +7,7 @@ go to /-> meanTasklist -> client
  Run 'npm install' 
 
 go to /-> meanTasklist -> client
-'npm run build:watch'
+Run 'npm run build:watch'
 
 !!! in another terminal !!!
 go to /-> meanTasklist
